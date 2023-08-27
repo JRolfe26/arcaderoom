@@ -1,0 +1,39 @@
+/* Google font */
+
+@import url('https://fonts.google.com/specimen/Roboto+Mono?category=Handwriting,Monospace');
+
+/* Global styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+html {
+    background: url("../images/halo-background-image.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+body {
+    display: grid;
+    font-family: 'Prata', sans-serif;
+    letter-spacing: 1px;
+    color: #fff9e6;
+    height: 100vh;
+}
+
+main {
+    display: grid;
+    align-self: center;
+    grid-gap: 1rem;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 2.6rem;
+    text-align: center;
+    padding: 20px 20px;
+    color: #fff9e6;
+}
