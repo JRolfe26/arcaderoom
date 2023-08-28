@@ -1,306 +1,313 @@
-/*jshint esversion: 8 */
 
-//array for each of the different difficulty levels stored below
-
-const easyQuestions = [{
-    question: "When was Halo CE first released?",
-    answers: [ 
-        {text: "2001", },
-        {text: "2004"},
-        {text: "2007"},
-        {text: "2010"}
+const mediumQuestions = [{
+    question: "Which type of Scarab was named Super Scarab in Halo Wars",
+    answers: [
+        {text: "Type 29"},
+        {text: "Type 36"},
+        {text: "Type 47"},
+        {text: "Type 52"}
     ],
-    correctAnswer: "2001"
+    correctAnswer: "Type 29"
 },
 {
-    question: "What is the Master Chief's real name",
+    question: "What is the name of that annoying lightbulb who betrays you in Halo CE and Halo 3",
     answers: [
-        {text: "Smith"},
-        {text: "Tony"},
-        {text: "John"},
-        {text: "Bob"}
+        {text: "Lightbulb guy"},
+        {text: "Guilty Spark"},
+        {text: "Cortana"},
+        {text: "Mendicant Bias"}
     ],
-    correctAnswer: "John"
+    correctAnswer: "Guilty Spark"
 },
 {
-    question: "What is the purpose of the Halo rings",
+    question: "What's the term for A.I. insanity in the Halo universe",
     answers: [
-        {text: "To give free candy"},
-        {text: "To give unlimted power to the Grunt Master race"},
-        {text: "To wipe out all sentient life in the galaxy"},
-        {text: "To only wipe out the Flood from the galaxy"}
+        {text: "Ai Insanity"},
+        {text: "Parity Error"},
+        {text: "Glitch Overload"},
+        {text: "Rampancy"}
     ],
-    correctAnswer: "To wipe out all sentient life in the galaxy"
+    correctAnswer: "Rampancy"
 },
 {
-    question: "In which Halo game was the pistol the most feared weapon known to man",
+    question: "What house was Sirius Black sorted into?",
     answers: [
-        {text: "Halo CE"},
+        {text: "Slytherin"},
+        {text: "Ravenclaw"},
+        {text: "Gryffindor"},
+        {text: "Hufflepuff"}
+    ],
+    correctAnswer: "Gryffindor"
+},
+{
+    question: "Who built the Halo Rings",
+    answers: [
+        {text: "The Precursors"},
+        {text: "The Flood"},
+        {text: "The Forerunners"},
+        {text: "The Covenant"}
+    ],
+    correctAnswer: "The Forerunners"
+},
+{
+    question: "What is Installation 00 better known as",
+    answers: [
+        {text: "Halo"},
+        {text: "The Ark"},
+        {text: "The Artifact"},
+        {text: "The Holy Grail"}
+    ],
+    correctAnswer: "The Ark"
+},
+{
+    question: "What is the name of Hagrid's giant half brother?",
+    answers: [
+        {text: "Goliath"},
+        {text: "Cyclops"},
+        {text: "Fridwulfa"},
+        {text: "Grawp"}
+    ],
+    correctAnswer: "Grawp"
+},
+{
+    question: "What is the name of the ship you're on at the beginning of Halo: Combat Evolved",
+    answers: [
+        {text: "The Pillar of Autumn"},
+        {text: "The Forward unto Dawn"},
+        {text: "Infinity"},
+        {text: "Amber Clad"}
+    ],
+    correctAnswer: "The Pillar of Autumn"
+},
+{
+    question: "What type of armor does the Master Chief wear during Halo: Combat Evolved",
+    answers: [
+        {text: "MJOLNIR Mark V"},
+        {text: "MJOLNIR Mark VI"},
+        {text: "MJOLNIR Mark IV"},
+        {text: "MJOLNIR Mark VII"}
+    ],
+    correctAnswer: "MJOLNIR Mark V"
+},
+{
+    question: "What's the name of the monitor of Installation 05, aka the Halo ring you land on in Halo 2",
+    answers: [
+        {text: "343 Guilty Spark"},
+        {text: "686 Ebullient Prism"},
+        {text: "031 Exuberant Witness"},
+        {text: "2401 Penitent Tangent"}
+    ],
+    correctAnswer: "2401 Penitent Tangent"
+},
+{
+    question: "What are Master Chief's final words in Halo 3",
+    answers: [
+        {text: "I need a Weapon"},
+        {text: "Wake me when you need me."},
+        {text: "It's just getting started."},
+        {text: "Sir, Finishing this fight"}
+    ],
+    correctAnswer: "Wake me when you need me."
+},
+{
+    question: "Who was the doctor who created the Spartans",
+    answers: [
+        {text: "Dr Stacy"},
+        {text: "Dr Anders"},
+        {text: "Dr Halsey"},
+        {text: "Dr Jef"}
+    ],
+    correctAnswer: "Dr Halsey"
+},
+{
+    question: "What does IWHBYD stand for",
+    answers: [
+        {text: "I Will Have Been Your Daddy"},
+        {text: "I Would Have Been Your Danny"},
+        {text: "I Would Have Been Your Daisy"},
+        {text: "I Would Have Been Your Daddy"}
+    ],
+    correctAnswer: "I Would Have Been Your Daddy"
+},
+{
+    question: "What medal do you get when you kill 10 players within 4 seconds of eachother in multiplayer",
+    answers: [
+        {text: "Killtacular"},
+        {text: "kilimanjaro"},
+        {text: "Killionaire"},
+        {text: "Killing Frenzy"}
+    ],
+    correctAnswer: "Killionaire"
+},
+{
+    question: "What is the name of the voice actor for the Announcer in many of Halo's multiplayer games",
+    answers: [
+        {text: "Jeff Steitzer"},
+        {text: "Steve Downes"},
+        {text: "Julie Benz"},
+        {text: "Keith David"}
+    ],
+    correctAnswer: "Jeff Steitzer"
+},
+{
+    question: "Chronologically in the Halo Universe, which game follows Halo: Reach?",
+    answers: [
+        {text: "Halo 2"},
         {text: "Halo 3"},
-        {text: "Halo Reach"},
-        {text: "Halo 5"}
+        {text: "Halo 4"},
+        {text: "Halo CE"}
     ],
     correctAnswer: "Halo CE"
 },
 {
-    question: "Which Halo game introduced the ability to dual-wield weapons",
+    question: "What does ODST stand for?",
     answers: [
-        {text: "Halo 3"},
-        {text: "Halo 2"},
-        {text: "Halo Reach"},
-        {text: "Halo Infinite"}
+        {text: "Orbiting Drop Shock Troopers"},
+        {text: "Orbital Down Shock Troopers"},
+        {text: "Orbital Drop Shock Troopers"},
+        {text: "Orbital Drop Shock Toops"}
     ],
-    correctAnswer: "Halo 2"
+    correctAnswer: "Orbital Drop Shock Troopers"
 },
 {
-question: "Which Halo game introduced the concept of armor abilities",
-answers: [
-    {text: "Halo 2"},
-    {text: "Halo 3"},
-    {text: "Halo Reach"},
-    {text: "Halo 4"}
-],
-correctAnswer: "Halo Reach"
-},
-{
-    question: "Which Halo game marks the first appearance of the Prometheans as a new enemy faction",
+    question: "What is the name of the group of Spartans that Master Chief is a part of in the Halo series",
     answers: [
-        {text: "Halo 4"},
-        {text: "Halo 2"},
-        {text: "Halo Infinite"},
-        {text: "Halo 5"}
+        {text: "SPARTAN-III's"},
+        {text: "SPARTAN-IV's"},
+        {text: "SPARTAN-II's"},
+        {text: "SPARTAN-I's"}
     ],
-    correctAnswer: "Halo 4"
+    correctAnswer: "SPARTAN-II's"
 },
 {
-    question: "What are the names of the three Hierarchs",
+    question: "Which human organization is responsible for creating the Spartans, including Master Chief",
     answers: [
-        {text: "Truth, Anger, Regret"},
-        {text: "Truth, Mercy, Regret"},
-        {text: "Lies, Mercy, Regret"},
-        {text: "Truth, Mercy, Wisdom"}
+        {text: "UNSC"},
+        {text: "ONI"},
+        {text: "SPARTAN"},
+        {text: "CMA"}
     ],
-    correctAnswer: "Truth, Mercy, Regret"
+    correctAnswer: "ONI"
 },
 {
-    question: "What happens in the beginning of Halo 2 that ends the award ceremony",
+    question: "What is the real name of the Grunt species",
     answers: [
-        {text: "Station explodes"},
-        {text: "Everyone gets their awards"},
-        {text: "The Covenant attack"},
-        {text: "Yap Yap attacks"}
-    ],
-    correctAnswer: "The Covenant attack"
-},
-{
-    question: "When did the great Yap Yap first appear",
-    answers: [
-        {text: "2009"},
-        {text: "2021"},
-        {text: "2008"},
-        {text: "2018"}
-    ],
-    correctAnswer: "2018"
-},
-{
-    question: "What level in Halo CE was the Flood first encountered",
-    answers: [
-        {text: "343 Guilty Spark"},
-        {text: "Halo"},
-        {text: "Silent Cartographer"},
-        {text: "The Maw"}
-    ],
-    correctAnswer: "343 Guilty Spark"
-},
-{
-    question: "What is the name of the Covenant tank",
-    answers: [
-        {text: "Ghost"},
-        {text: "Wraith"},
-        {text: "Scorpion"},
-        {text: "Warthog"}
-    ],
-    correctAnswer: "Wraith"
-},
-{
-    question: "Tank beats Ghosts, Tank beats Hunter, Tank beats .....",
-    answers: [
-        {text: "Nothing"},
-        {text: "Your Mum"},
-        {text: "Everything"},
-        {text: "Scarab"}
-    ],
-    correctAnswer: "Everything"
-},
-{
-    question: "Who does the Prophet of Truth kill in Halo 3",
-    answers: [
-        {text: "Master Chief"},
-        {text: "The Arbiter"},
-        {text: "Sgt Johnson"},
-        {text: "Miranda Keys"}
-    ],
-    correctAnswer: "Miranda Keys"
-},
-{
-    question: "Who would win in a fight Yap Yap or Master Chief",
-    answers: [
-        {text: "Yap Yap (Obviously)"},
-        {text: "The Master Chief (by cheating)"},
-        {text: "Draw (ridiculous)"},
-        {text: "Yap Yap's cousion Yip Yap (How the hell did he get here)"}
-    ],
-    correctAnswer: "Yap Yap (Obviously)"
-},
-{
-    question: "When did the great Schism take place",
-    answers: [
-        {text: "2551"},
-        {text: "2499"},
-        {text: "2552"},
-        {text: "2452"}
-    ],
-    correctAnswer: "2552"
-},
-{
-    question: "Halo Wars 2 introduced an incredbile vilian to the franchise who was that vilian",
-    answers: [
-        {text: "Yap Yap (this is the obvious answer)"},
-        {text: "Pophet of Truth"},
-        {text: "Tartarus"},
-        {text: "Atriox"}
-    ],
-    correctAnswer: "Atriox"
-},
-{
-    question: "What is the name of the Arbiter during Halo 2 onwards",
-    answers: [
-        {text: "Thel 'Vadam"},
-        {text: "Ripa 'Moramee"},
-        {text: "Fal 'Chavamee"},
-        {text: "Judge-King of Qivro"}
-    ],
-    correctAnswer: "Thel 'Vadam"
-},
-{
-    question: "The Unggoy and the ..... are natural eniemes",
-    answers: [
-        {text: "Humans"},
         {text: "Sangheili"},
-        {text: "Kig-Yar"},
-        {text: "Jiralhanae"}
+        {text: "Jiralhanae"},
+        {text: "Unggoy"},
+        {text: "Kig-Yar"}
     ],
-    correctAnswer: "Kig-Yar"
+    correctAnswer: "Unggoy"
 },
 {
-    question: "Who is Master Chiefs Ai?",
+    question: "When did the Human-Covenant war start",
     answers: [
-        {text: "Yap Yap"},
-        {text: "Cortana"},
-        {text: "Serina"},
-        {text: "Roland"}
+        {text: "2524"},
+        {text: "2671"},
+        {text: "2555"},
+        {text: "2020"}
     ],
-    correctAnswer: "Cortana"
+    correctAnswer: "2524"
 },
 {
-    question: "Who is the mysterious new alien faction introduced in Infinite",
+    question: "When did humanity achieve faster than light travel",
     answers: [
-        {text: "The Banished"},
-        {text: "The Flood"},
-        {text: "The Endless"},
-        {text: "The Covenant"}
+        {text: "2120"},
+        {text: "2255"},
+        {text: "2050"},
+        {text: "2291"}
     ],
-    correctAnswer: "The Endless"
+    correctAnswer: "2291"
 },
 {
-    question: "Which Spartan team does Atriox go up against at the beginning of Halo Wars 2",
+    question: "What planet was first glassed by the Covenant",
     answers: [
-        {text: "Red Team"},
-        {text: "Blue Team"},
-        {text: "Noble Team"},
-        {text: "Fireteam Osiris"}
+        {text: "Reach"},
+        {text: "Earth"},
+        {text: "Harvest"},
+        {text: "Mars"}
     ],
-    correctAnswer: "Red Team"
-},
-{
-    question: "Who is the main enemy introduced in Halo 4",
-    answers: [
-        {text: "The Endless"},
-        {text: "Prophet of Truth"},
-        {text: "Atriox"},
-        {text: "The Didact"}
-    ],
-    correctAnswer: "The Didact"
-},
-{
-    question: "Cortana sadly died in which Halo game",
-    answers: [
-        {text: "Halo 5"},
-        {text: "Halo 4"},
-        {text: "Halo CE"},
-        {text: "Halo Reach"}
-    ],
-    correctAnswer: "Halo 4"
-},
-{
-    question: "What is the name of the Spartan armored suit",
-    answers: [
-        {text: "Power Armor"},
-        {text: "Praetor Suit"},
-        {text: "Nanosuit"},
-        {text: "Mjolnir"}
-    ],
-    correctAnswer: "Mjolnir"
-},
-{
-    question: "What type of Ammo do most Covenant weapons usually use",
-    answers: [
-        {text: "Plasma"},
-        {text: "Energy"},
-        {text: "Balistic"},
-        {text: "Electric"}
-    ],
-    correctAnswer: "Plasma"
+    correctAnswer: "Harvest"
 },
 { 
-    question: "What is the reason that the Arbiter is punished in the beginning of Halo 2",
+    question: "When did the Grunt rebelion that nearly brought the Covenant to the knees take place",
     answers: [
-        {text: "Brought the Master Chief to High Charity"},
-        {text: "Blamed for being a Heretic"},
-        {text: "Killed his own men"},
-        {text: "Tried to take power"}
+        {text: "2537"},
+        {text: "2475"},
+        {text: "2212"},
+        {text: "2462"}
     ],
-    correctAnswer: "Blamed for being a Heretic"
+    correctAnswer: "2462"
 },
 {
-    question: "What species was in charge of eliminating the Sangheili",
+    question: "What genre of game was Halo originally going to be",
     answers: [
-        {text: "Kig-Yar"},
-        {text: "Jiralhanae"},
-        {text: "Yanme'e"},
-        {text: "Mgalekgolo"}
+        {text: "RTS"},
+        {text: "FPS"},
+        {text: "RPG"},
+        {text: "CRPG"}
     ],
-    correctAnswer: "Jiralhanae"
+    correctAnswer: "RTS"
 },
 {
-    question: "In what game where the Jiralhanae first introduced",
+    question: "Prior to the release of Halo what other game did Bungie work on",
     answers: [
-        {text: "Halo 3"},
-        {text: "Halo Infinite"},
-        {text: "Halo 2"},
-        {text: "Halo Reach"}
+        {text: "Marathon"},
+        {text: "Destiny"},
+        {text: "Splinter Cell"},
+        {text: "Doom"}
     ],
-    correctAnswer: "Halo 2"
+    correctAnswer: "Marathon"
 },
 {
-    question: "Which Halo game was the first to let you play on Zeta Halo",
+    question: "What gun is the Master Chief dual-wielding on the front cover of Halo 2",
     answers: [
-        {text: "Halo Infinite"},
-        {text: "Halo 3"},
-        {text: "Halo 5"},
-        {text: "Halo Spartan Assault"}
+        {text: "Battle Rifle"},
+        {text: "Pistol"},
+        {text: "SMG"},
+        {text: "Plasma Pistol"}
     ],
-    correctAnswer: "Halo Infinite"
+    correctAnswer: "SMG"
+},
+{
+    question: "The Battle Rifle shoots bullets in bursts of what",
+    answers: [
+        {text: "1"},
+        {text: "3"},
+        {text: "2"},
+        {text: "4"}
+    ],
+    correctAnswer: "3"
+},
+{
+    question: "How many kills must you have in a a row to earn a Berserker medal",
+    answers: [
+        {text: "5"},
+        {text: "15"},
+        {text: "20"},
+        {text: "10"}
+    ],
+    correctAnswer: "20"
+},
+{
+    question: "Who said this. You are, all of you, vermin. Cowering in the dirt thinking, what? That you can escape the coming fire? Your world will burn until its' surface is but glass! Your destruction is the will of the gods! And I am their instrument!",
+    answers: [
+        {text: "Prophet of Truth"},
+        {text: "The Arbiter"},
+        {text: "Prophet of Mercy"},
+        {text: "The Master Chief"}
+    ],
+    correctAnswer: "Prophet of Truth"
+},
+{
+    question: "What is the Grunt's homeworld",
+    answers: [
+        {text: "Requiem"},
+        {text: "Titus"},
+        {text: "Keplar"},
+        {text: "Bahalo"}
+    ],
+    correctAnswer: "Bahalo"
 }
 ];
 
