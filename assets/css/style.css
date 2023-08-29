@@ -37,3 +37,638 @@ h2 {
     padding: 20px 20px;
     color: #fff9e6;
 }
+
+/* header styles*/
+header {
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 4rem;
+    font-family: 'Cinzel', sans-serif;
+    color: #fff9e6;
+    align-self: center;
+    text-align: center;
+    /* code for h1 3d effect can be found here: https://codepen.io/ryandsouza13/pen/yEBJQV */
+    text-shadow: 1px 1px 1px #02c8ff,
+        1px 2px 1px #02c8ff,
+        1px 3px 1px #02c8ff,
+        1px 4px 1px #02c8ff,
+        1px 5px 1px #02c8ff,
+        1px 6px 1px #02c8ff,
+        1px 7px 1px #02c8ff,
+        1px 8px 1px #02c8ff,
+        1px 9px 1px #02c8ff,
+        1px 10px 1px #02c8ff,
+        1px 18px 6px rgba(16, 16, 16, 0.4),
+        1px 22px 10px rgba(16, 16, 16, 0.2),
+        1px 25px 35px rgba(16, 16, 16, 0.2),
+        1px 30px 60px rgba(16, 16, 16, 0.4);
+}
+
+/* Quiz container styles */
+
+.quiz-container {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px #fff9e6 solid;
+    outline: 1px solid #fff9e6;
+    outline-offset: -6px;
+    max-width: 80%;
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+    padding: 10px;
+    box-shadow: 5px 5px 100px #fff9e6;
+}
+
+.info-bar {
+    height: 50px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+    border-bottom: 1px solid #fff9e6;
+    text-align: center;
+}
+
+.user-score-container,
+.timer-container {
+    display: flex;
+}
+
+#user-score,
+#timer {
+    padding-left: 5px;
+    font-size: 1.4rem;
+}
+
+.fas,
+.fab,
+.far {
+    color: #fff9e6;
+    font-size: 1.6rem;
+}
+
+/* Same styles for quiz difficulty, quiz start screen, quiz questions screen and the results screen start here */
+
+.difficulty-btn-container,
+.quiz-start-content,
+.home-btn-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.difficulty-btn-container,
+.quiz-start-content,
+.next-btn-container,
+.results-content-container,
+.home-btn-container {
+    margin-bottom: 20px;
+}
+
+.quiz-difficulty-container,
+.quiz-start-content,
+.question-text,
+.results-content-container,
+.home-btn-container {
+    margin-top: 10px;
+}
+
+.difficulty-btn,
+.start-button,
+.answer-btn,
+.next-btn,
+.play-again-btn,
+.save-button,
+.btn {
+    padding: 16px;
+    margin-top: 12px;
+    background-color: #02c8ff;
+    color: #fff9e6;
+    font-size: 2rem;
+    width: 70%;
+    border: 2px #fff9e6 solid;
+    outline: 1px solid #fff9e6;
+    outline-offset: -6px;
+    font-family: 'Prata', sans-serif;
+}
+
+.difficulty-btn:hover,
+.start-button:hover,
+.answer-btn-hover:hover,
+.next-btn-hover,
+.play-again-btn:hover,
+.btn:hover {
+    background-color: #fff9e6;
+    color: #02c8ff;
+    border: 2px #82ddf6 solid;
+    outline: 1px solid #82ddf6;
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in;
+}
+
+/*Unique styles for rules screen */
+
+.rules-content-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2fr;
+    padding: 20px 20px;
+}
+
+.rules-heading {
+    grid-column: 1/4;
+}
+
+.rule-info {
+    padding: 15px;
+    display: grid;
+    grid-auto-rows: minmax(min-content, max-content);
+}
+
+.rule-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 6px;
+    color: gold;
+}
+
+.rule-info li {
+    margin-top: 4px;
+    font-size: 1rem;
+}
+
+#rules-home-btn {
+    justify-self: center;
+    grid-column: 1/4;
+    max-width: 40%;
+}
+
+/* unique styles for quiz questions screen */
+
+.question-number h3 {
+    text-align: center;
+    margin-top: 6px;
+}
+
+.question-text p {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.answer-btn-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.answer-btn {
+    justify-self: center;
+    height: 80px;
+    width: 60%;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+.answer-btn-container button:nth-child(even) {
+    margin-right: 100px;
+}
+
+.answer-btn-container button:nth-child(odd) {
+    margin-left: 100px;
+}
+
+.next-btn-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.next-btn {
+    width: 100%;
+    max-width: 20%;
+    justify-self: center;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+/*unique styles for the results screen */
+
+.results-content-container {
+    display: grid;
+    justify-items: center;
+}
+
+.results-content-container h2 {
+    font-size: 2rem;
+}
+
+.results-content-container p {
+    font-size: 2.6rem;
+    margin-bottom: 10px;
+}
+
+.play-again-btn,
+.save-button {
+    width: 100%;
+    max-width: 90%;
+    justify-self: center;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+#username-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    width: 100%;
+}
+
+.input-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    max-width: 50%;
+    width: 100%;
+}
+
+input#username {
+    padding: 0 4px;
+    margin-top: 12px;
+    background-color: #fff9e6;
+    color: #4a0600;
+    font-size: 2rem;
+    border: 2px #4a0600 solid;
+    font-family: 'Prata', sans-serif;
+    width: 90%;
+}
+
+/* Styles for highscores screen */
+.highscores-content-container {
+    display: grid;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+ul#high-scores-list {
+    list-style: none;
+    display: grid;
+    justify-content: center;
+}
+
+li.high-score {
+    font-size: 1.6rem;
+    padding: 5px 16px;
+}
+
+li.high-score:first-child {
+    font-size: 1.8rem;
+    color: gold;
+}
+
+/* hide the content with the class hide */
+.hide {
+    display: none;
+}
+
+/* styles for wrong and right answers for the answer buttons */
+
+.correct {
+    background-color: #064d00;
+}
+
+.wrong {
+    background-color: #b30f00;
+}
+
+/* Media Queries start here */
+
+/* For screens of 700px wide and down and portrait orientation */
+
+@media screen and (max-width:700px) and (orientation:portrait) {
+    /* header styles */
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    /* Quiz container styles */
+
+    .fas,
+    .fab,
+    .far {
+        font-size: 1.2rem;
+    }
+
+    #user-score,
+    #timer {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    /*uniques styles for rules screen*/
+
+    .rules-content-container {
+        padding: 10px 10px;
+        grid-template-columns: 1fr;
+    }
+
+    #rules-home-btn {
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+
+    .rules-content-container h2 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+
+    /*unique styles for questions screen */
+
+    .answer-btn {
+        font-size: 1rem;
+        width: 80%;
+    }
+
+    .answer-btn-container button:nth-child(even) {
+        margin-right: 20px;
+    }
+
+    .answer-btn-container button:nth-child(odd) {
+        margin-left: 20px;
+    }
+
+    .next-btn {
+        max-width: 40%;
+    }
+
+    .next-btn-hover {
+        background-color: #fff9e6;
+        color: #4a0600;
+        border: 2px #4a0600 solid;
+        outline: 1px solid #4a0600;
+        transform: none;
+        transition: none;
+    }
+
+    /*unique styles for results screen */
+
+    .results-content-container h2 {
+        font-size: 1.8rem;
+    }
+
+    .results-content-container p {
+        font-size: 2.2rem;
+    }
+
+    .play-again-btn,
+    .save-button {
+        width: 100%;
+        max-width: 90%;
+    }
+
+    .input-container {
+        max-width: 70%;
+        width: 100%;
+    }
+}
+
+/* For screens of 490px wide and down and portrait orientation*/
+
+@media screen and (max-width:490px) and (orientation:portrait) {
+
+    /*header styles*/
+
+    header {
+        grid-template-columns: 1fr;
+    }
+
+    .halo-logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    h1 {
+        font-size: 2rem;
+        text-shadow: 1px 1px 1px #4a0600;
+    }
+
+    /* Quiz container styles */
+
+    #user-score,
+    #timer {
+        font-size: 1rem;
+    }
+
+    .main {
+        grid-template-rows: auto;
+    }
+
+    .quiz-container {
+        max-width: 94%;
+        padding: 0;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    /*Same styles for quiz screen, quiz difficulty screen, quiz start screen, quiz questions screen and quiz results screen */
+
+    .difficulty-btn,
+    .start-button,
+    .answer-btn,
+    .next-btn .btn {
+        margin-top: 8px;
+        font-size: 1rem;
+        width: 80%;
+    }
+
+    /* unique styles for quiz screen */
+
+    .btn {
+        font-size: 1.2rem;
+    }
+
+    /*unique styles for quiz questions screen */
+
+    .question-text p {
+        font-size: 1rem;
+        padding: 5px;
+    }
+
+    .answer-btn-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .answer-btn {
+        height: unset;
+    }
+
+    .answer-btn-container button:nth-child(even) {
+        margin-right: unset;
+    }
+
+    .answer-btn-container button:nth-child(odd) {
+        margin-left: unset;
+    }
+
+    /* unique styles for results page */
+
+    .results-content-container h2 {
+        font-size: 1rem;
+        padding: 5px;
+    }
+
+    .input-container {
+        max-width: 98%;
+    }
+
+    /* Styles for highscores screen */
+
+    .highscores-content-container h2 {
+        font-size: 2rem;
+    }
+
+    li.high-score {
+        font-size: 1rem;
+    }
+
+    li.high-score:first-child {
+        font-size: 1.2rem;
+    }
+
+}
+
+/* Media queries for landscape orientation on phones and tablets of a max-width of 950px and min-height of 320px */
+
+@media screen and (max-width: 950px) and (orientation:landscape) {
+
+    /* header styles */
+
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    /* Quiz container styles */
+
+    .main {
+        grid-gap: 0rem;
+    }
+
+    .quiz-container {
+        max-width: 96%;
+        padding: 2px;
+        width: 650px;
+    }
+
+    .info-bar {
+        height: 40px;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+        padding: 4px;
+    }
+
+
+    /*Same styles for quiz screen, quiz difficulty screen, quiz start screen, quiz questions screen and quiz results screen */
+
+    .difficulty-btn-container,
+    .home-btn-container {
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    .difficulty-btn,
+    .answer-btn,
+    .next-btn,
+    .play-again-btn,
+    .save-button,
+    .btn {
+        width: 90%;
+        height: 100%;
+        font-size: 1.6rem;
+        margin-top: 4px;
+        padding: 6px;
+    }
+
+    .play-again-btn,
+    .save-button {
+        width: 100%;
+        height: 100%;
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+
+    /*unique styles for quiz questions screen */
+
+    .question-text p {
+        font-size: 1rem;
+    }
+
+    .answer-btn {
+        height: 90%;
+        width: 80%;
+        font-size: 1rem;
+    }
+
+    .answer-btn-container button:nth-child(even) {
+        margin-right: 20px;
+    }
+
+    .answer-btn-container button:nth-child(odd) {
+        margin-left: 20px;
+    }
+
+    .next-btn {
+        font-size: 1rem;
+    }
+
+    /*unique styles for quiz results screen */
+
+    .results-content-container h2 {
+        font-size: 1.2rem;
+    }
+
+    .results-content-container p {
+        font-size: 1.6rem;
+    }
+
+    .input-container {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 80%;
+    }
+
+    input#username {
+        grid-column: 1/3;
+        margin-top: 0px;
+        font-size: 1.2rem;
+        width: 200px;
+    }
+
+    /*unique styles for quiz high scores screen */
+
+    ul#high-scores-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    li.high-score:first-child {
+        grid-column: 1/3;
+        grid-row: 1/2;
+        justify-self: center;
+        font-size: 1.4rem;
+    }
+
+    li.high-score {
+        font-size: 1rem;
+    }
+}
